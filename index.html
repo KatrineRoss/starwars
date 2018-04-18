@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">-->
+    <link href="http://allfont.ru/allfont.css?fonts=open-sans" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="paralax">
+    <header class="header" onclick="test()" id="test">
+        <img class="logo" src="images/svg/Star_Wars.svg" alt="StarWars Logo"> <br>
+        <div class="mainUnit" id="main_unit">
+            <div class="mainUnit__circleIcon circleIcon"></div>
+            <h2 class="mainUnit__h2">Galactic Empire</h2>
+            <p class="mainUnit__p">Imperial military</p>
+        </div>
+        <img class="header__circle" src="images/svg/circle.svg" alt="">
+        <p class="backButton" onclick="returnState()">Back</p>
+        <img class="backArrow backArrowLeft" src="images/svg/arrow.svg" onclick="getNextUnitInRange()">
+        <img class="backArrow backArrowRight" src="images/svg/arrow.svg" onclick="getNextUnitInRange()">
+    </header>
+    <main class="main-area">
+        <div class="unit" id="unit_0">
+            <div class="unit__circleIcon circleIcon"></div>
+            <h2 class="unit__h2">Darth Sidius</h2> 
+            <p class="unit__p">Galactic emperor</p>
+        </div>
+        <div class="unit" id="unit_1" onclick="showArmy(this)">
+            <div class="unit__circleIcon circleIcon"></div>
+            <h2 class="unit__h2">Darth Vader</h2> 
+            <p class="unit__p">Supreme Commander</p>
+            <div class="count_circle"></div>
+        </div>
+    </main> 
+    <div class="flashBlock flashBlockBlack" id="black_block"></div>
+    <div class="flashBlock flashBlockLight" id="light_block"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="script.js">
+    </script>
+</body>
+</html>
